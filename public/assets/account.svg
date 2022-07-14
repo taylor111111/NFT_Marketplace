@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="478" height="477" viewBox="0 0 478 477">
+  <g id="Account" transform="translate(-278 -158)">
+    <g id="Form" transform="translate(31 -2)">
+      <rect id="Container" width="478" height="477" rx="16" transform="translate(247 160)" fill="#282a2c"/>
+    </g>
+    <path id="Line" d="M0,0H206a0,0,0,0,1,0,0V0a8,8,0,0,1-8,8H8A8,8,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(414 158)" fill="#00a2e0"/>
+  </g>
+</svg>

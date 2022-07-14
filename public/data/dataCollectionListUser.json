@@ -1,0 +1,274 @@
+[
+  {
+    "id": 101,
+    "itemType": "Collection",
+    "status": "Minted",
+    "url": "www.nike.com",
+    "photoUrl": "",
+    "photoUrlList": ["/assets/scroll-img02.png", "/assets/scroll-img01.png", "/assets/scroll-img03.png", "/assets/scroll-img04.png"],
+    "endD": "07",
+    "endH": "20",
+    "endM": "32",
+    "type": "Collection Item",
+    "wallet": "Metamask",
+    "filterType": "Listed on NFT marketplace but not minted yet", 
+    "collectionIcon": "/assets/scroll-admin-img01.png",
+    "collectionBanner": "/assets/box-banner-01.jpg",
+    "collectionType": "Images",
+    "collectionCurrency": {
+      "iconPath": "",
+      "label": "Flat",
+      "value": "Flat"
+    },
+    "nftCollectionName": "Air Jordan",
+    "titleCollections": {
+      "iconPath": "",
+      "label": "Jordan Collections",
+      "value": "Jordan Collections"
+    },
+    "nftName": "White Jordan Sport",
+    "viewNumber": "128",
+    "likeNumber": "77",
+    "balance": "12.46",
+    "currency": "ETH",
+    "price": "$ 8,762.64",
+    "nftCreatorPhotoUrl": "/assets/user-photo01.jpg",
+    "nftCreatorName": "Eddie Smith",
+    "nftEnterpriseLogo": "/assets/icon-nike.svg",
+    "nftEnterpriseName": "Nike",
+    "saleType": "Auction",
+    "blockchain": {
+      "iconPath": "/assets/icon-eth.svg",
+      "label": "Ethereum",
+      "value": "Ethereum"
+    },
+    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod devide et imperatempor invidunt ut labore devide et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet.",
+    "details": {
+      "contractAddress": "1723091983...1983",
+      "tokenID": "231709198317230919831723091983",
+      "tokenStandard": "DEAR-1723",
+      "stocks": "1 of 4"
+    },
+    "attributes": [
+      {
+        "name": "Model",
+        "value": "Nikesport"
+      },
+      {
+        "name": "Rarity",
+        "value": "Common"
+      },
+      {
+        "name": "Item Size",
+        "value": "2500 x 2500"
+      },
+      {
+        "name": "Color",
+        "value": "Neon"
+      }
+    ],
+    "digitalAsset": null
+  },
+  {
+    "id": 102,
+    "itemType": "Collection",
+    "status": "For Sale",
+    "url": "www.nike.com",
+    "photoUrl": "",
+    "photoUrlList": ["/assets/scroll-img02.png", "/assets/scroll-img01.png", "/assets/scroll-img04.png"],
+    "endD": "08",
+    "endH": "40",
+    "endM": "30",
+    "type": "Collection Item",
+    "wallet": "Math Wallet",
+    "filterType": "Minted on public Blockchain",
+    "collectionIcon": "/assets/scroll-admin-img01.png",
+    "collectionBanner": "/assets/box-banner-01.jpg",
+    "collectionType": "Images",
+    "collectionCurrency": {
+      "iconPath": "",
+      "label": "Flat",
+      "value": "Flat"
+    },
+    "nftCollectionName": "Air Jordan 1",
+    "titleCollections": {
+      "iconPath": "",
+      "label": "Jordan Collections 11",
+      "value": "Jordan Collections 11"
+    },
+    "nftName": "Jordan Sport",
+    "viewNumber": "168",
+    "likeNumber": "66",
+    "balance": "9.22",
+    "currency": "ETH",
+    "price": "$ 7,762.64",
+    "nftCreatorPhotoUrl": "/assets/user-photo01.jpg",
+    "nftCreatorName": "Eddie Smith",
+    "nftEnterpriseLogo": "/assets/icon-nike.svg",
+    "nftEnterpriseName": "Nike",
+    "saleType": "Fixed Price",
+    "blockchain": {
+      "iconPath": "/assets/icon-eth.svg",
+      "label": "Ethereum",
+      "value": "Ethereum"
+    },
+    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod devide et imperatempor invidunt ut labore devide et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet.",
+    "details": {
+      "contractAddress": "1723091983...1983",
+      "tokenID": "231709198317230919831723091983",
+      "tokenStandard": "DEAR-1723",
+      "stocks": "1 of 4"
+    },
+    "attributes": [
+      {
+        "name": "Model",
+        "value": "Nikesport"
+      },
+      {
+        "name": "Rarity",
+        "value": "Common"
+      },
+      {
+        "name": "Item Size",
+        "value": "2500 x 2500"
+      },
+      {
+        "name": "Color",
+        "value": "Neon"
+      }
+    ],
+    "digitalAsset": null
+  },
+  {
+    "id": 103,
+    "itemType": "Collection",
+    "status": "On Auction",
+    "url": "www.nike.com",
+    "photoUrl": "",
+    "photoUrlList": ["/assets/scroll-img02.png", "/assets/scroll-img01.png", "/assets/scroll-img03.png"],
+    "endD": "09",
+    "endH": "30",
+    "endM": "52",
+    "type": "Collection Item",
+    "wallet": "Phantom",
+    "filterType": "NFT up for sale",
+    "collectionIcon": "/assets/scroll-admin-img01.png",
+    "collectionBanner": "/assets/box-banner-01.jpg",
+    "collectionType": "Images",
+    "collectionCurrency": {
+      "iconPath": "",
+      "label": "Flat",
+      "value": "Flat"
+    },
+    "nftCollectionName": "Air Jordan 2",
+    "titleCollections": {
+      "iconPath": "",
+      "label": "Jordan Collections 22",
+      "value": "Jordan Collections 22"
+    },
+    "nftName": "White Sport",
+    "viewNumber": "128",
+    "likeNumber": "57",
+    "balance": "9.12",
+    "currency": "ETH",
+    "price": "$ 8,762.64",
+    "nftCreatorPhotoUrl": "/assets/user-photo01.jpg",
+    "nftCreatorName": "Eddie Smith",
+    "nftEnterpriseLogo": "/assets/icon-nike.svg",
+    "nftEnterpriseName": "Nike",
+    "saleType": "Fixed Price",
+    "blockchain": {
+      "iconPath": "/assets/icon-eth.svg",
+      "label": "Ethereum",
+      "value": "Ethereum"
+    },
+    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod devide et imperatempor invidunt ut labore devide et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet.",
+    "details": {
+      "contractAddress": "1723091983...1983",
+      "tokenID": "231709198317230919831723091983",
+      "tokenStandard": "DEAR-1723",
+      "stocks": "4 of 4"
+    },
+    "attributes": [
+      {
+        "name": "Model",
+        "value": "Nikesport"
+      },
+      {
+        "name": "Rarity",
+        "value": "Common"
+      },
+      {
+        "name": "Color",
+        "value": "Neon"
+      }
+    ],
+    "digitalAsset": null
+  },
+  {
+    "id": 104,
+    "itemType": "Collection",
+    "status": "Sold",
+    "url": "www.nike.com",
+    "photoUrl": "",
+    "photoUrlList": ["/assets/scroll-img02.png", "/assets/scroll-img01.png", "/assets/scroll-img03.png"],
+    "endD": "10",
+    "endH": "20",
+    "endM": "32",
+    "type": "Collection Item",
+    "wallet": "Trust Wallet",
+    "filterType": "NFT sold to a collector",
+    "collectionIcon": "/assets/scroll-admin-img01.png",
+    "collectionBanner": "/assets/box-banner-01.jpg",
+    "collectionType": "Images",
+    "collectionCurrency": {
+      "iconPath": "",
+      "label": "Flat",
+      "value": "Flat"
+    },
+    "nftCollectionName": "Air Jordan 3",
+    "titleCollections": {
+      "iconPath": "",
+      "label": "Jordan Collections 33",
+      "value": "Jordan Collections 33"
+    },
+    "nftName": "White Jordan Sport",
+    "viewNumber": "128",
+    "likeNumber": "49",
+    "balance": "6.32",
+    "currency": "ETH",
+    "price": "$ 8,762.64",
+    "nftCreatorPhotoUrl": "/assets/user-photo01.jpg",
+    "nftCreatorName": "Eddie Smith",
+    "nftEnterpriseLogo": "/assets/icon-nike.svg",
+    "nftEnterpriseName": "Nike",
+    "saleType": "Fixed Price",
+    "blockchain": {
+      "iconPath": "/assets/icon-eth.svg",
+      "label": "Ethereum",
+      "value": "Ethereum"
+    },
+    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod devide et imperatempor invidunt ut labore devide et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet.",
+    "details": {
+      "contractAddress": "1723091983...1983",
+      "tokenID": "231709198317230919831723091983",
+      "tokenStandard": "DEAR-1723",
+      "stocks": "2 of 4"
+    },
+    "attributes": [
+      {
+        "name": "Model",
+        "value": "Nikesport"
+      },
+      {
+        "name": "Item Size",
+        "value": "2500 x 2500"
+      },
+      {
+        "name": "Color",
+        "value": "Neon"
+      }
+    ],
+    "digitalAsset": null
+  }
+]

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13.213" height="17.5" viewBox="0 0 13.213 17.5">
+  <g id="database" transform="translate(0.75 0.75)" opacity="0.25">
+    <ellipse id="椭圆_44" data-name="椭圆 44" cx="5.856" cy="2.4" rx="5.856" ry="2.4" transform="translate(0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="路径_236" data-name="路径 236" d="M14.713,12c0,1.328-2.6,2.4-5.856,2.4S3,13.328,3,12" transform="translate(-3 -4)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="路径_237" data-name="路径 237" d="M3,5V16.2c0,1.328,2.6,2.4,5.856,2.4s5.856-1.072,5.856-2.4V5" transform="translate(-3 -2.6)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

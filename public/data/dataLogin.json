@@ -1,0 +1,12 @@
+[
+  {
+    "email": "nikenft@nike.com",
+    "password": "1234567890",
+    "roleType": "admin"
+  },
+  {
+    "email": "tamara_b@gmail.com",
+    "password": "1234567890",
+    "roleType": "user"
+  }
+]

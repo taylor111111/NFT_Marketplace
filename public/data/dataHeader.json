@@ -1,0 +1,11 @@
+{
+  "username": "Eddie Smith",
+  "blockchainIconUrl": "/assets/icon-eth.svg",
+  "balance": "42.007382",
+  "currency": "ETH",
+  "walletAddress": "0jkzdz674hj8534483…847djh",
+  "walletAddressFull": "0jkzdz674hj85344831234847djh",
+  "photoUrl": "/assets/avatar.jpg",
+  "email": "nikenft@nike.com",
+  "roleType": "admin"
+}

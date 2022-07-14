@@ -1,0 +1,196 @@
+{
+  "attributeOptions": [
+    "Model",
+    "Rarity",
+    "Item Size",
+    "Color"
+  ],  
+  "chainOptions": [
+    {
+      "iconPath": "/assets/icon-eth.svg",
+      "label": "Ethereum",
+      "value": "Ethereum"
+    },
+    {
+      "iconPath": "/assets/icon-eth.svg",
+      "label": "Hedera",
+      "value": "Hedera"
+    }
+  ],
+  "currencyOptions": [
+    {
+      "iconPath": "",
+      "label": "Fiat",
+      "value": "Fiat"
+    },
+    {
+      "iconPath": "",
+      "label": "Crypto",
+      "value": "Crypto"
+    }
+  ],
+  "statusOptions": [
+    {
+      "iconPath": "",
+      "label": "Minted",
+      "value": "Minted"
+    },
+    {
+      "iconPath": "",
+      "label": "For Sale",
+      "value": "For Sale"
+    },
+    {
+      "iconPath": "",
+      "label": "On Auction",
+      "value": "On Auction"
+    },
+    {
+      "iconPath": "",
+      "label": "Sold",
+      "value": "Sold"
+    }
+  ],
+  "typeOptions": [
+    {
+      "iconPath": "",
+      "label": "Listed on NFT marketplace but not minted yet",
+      "value": "Listed on NFT marketplace but not minted yet"
+    },
+    {
+      "iconPath": "",
+      "label": "Minted on public Blockchain",
+      "value": "Minted on public Blockchain"
+    },
+    {
+      "iconPath": "",
+      "label": "NFT up for sale",
+      "value": "NFT up for sale"
+    },
+    {
+      "iconPath": "",
+      "label": "NFT sold to a collector",
+      "value": "NFT sold to a collector"
+    }
+  ],
+  "walletOptions": [
+    {
+      "iconPath": "/assets/metamask.svg",
+      "label": "Metamask",
+      "value": "Metamask"
+    },
+    {
+      "iconPath": "/assets/icon-nike.svg",
+      "label": "Math Wallet",
+      "value": "Math Wallet"
+    },
+    {
+      "iconPath": "/assets/icon-nike.svg",
+      "label": "Phantom",
+      "value": "Phantom"
+    },
+    {
+      "iconPath": "/assets/icon-nike.svg",
+      "label": "Trust Wallet",
+      "value": "Trust Wallet"
+    },
+    {
+      "iconPath": "/assets/icon-nike.svg",
+      "label": "Coinbase",
+      "value": "Coinbase"
+    },
+    {
+      "iconPath": "/assets/icon-nike.svg",
+      "label": "Dapper",
+      "value": "Dapper"
+    }
+  ],
+  "dataStorageOptions": [
+    {
+      "iconPath": "",
+      "label": "Distributed",
+      "value": "Distributed"
+    },
+    {
+      "iconPath": "",
+      "label": "Decentralized",
+      "value": "Decentralized"
+    },
+    {
+      "iconPath": "",
+      "label": "Cloud",
+      "value": "Cloud"
+    }
+  ],
+  "socialMediaOptions": [
+    {
+      "iconPath": "/assets/select-icon-wedsite.svg",
+      "label": "Website",
+      "value": "Website"
+    },
+    {
+      "iconPath": "/assets/logo-twitter.svg",
+      "label": "Twitter",
+      "value": "Twitter"
+    },
+    {
+      "iconPath": "/assets/facebook-blue.svg",
+      "label": "Facebook",
+      "value": "Facebook"
+    },
+    {
+      "iconPath": "/assets/logo-instagram.svg",
+      "label": "Instagram",
+      "value": "Instagram"
+    },
+    {
+      "iconPath": "/assets/youtube-logo.svg",
+      "label": "Youtube",
+      "value": "Youtube"
+    },
+    {
+      "iconPath": "/assets/metamask.svg",
+      "label": "LinkedIn",
+      "value": "LinkedIn"
+    }
+  ],
+  "fontOptions": [
+    {
+      "iconPath": "",
+      "label": "Roboto",
+      "value": "Roboto"
+    },
+    {
+      "iconPath": "",
+      "label": "Inter",
+      "value": "Inter"
+    },
+    {
+      "iconPath": "",
+      "label": "Futura",
+      "value": "Futura"
+    }
+  ],
+  "colorBrandingOptions": [
+    {
+      "iconPath": "",
+      "label": "Primary Color",
+      "value": "Primary Color"
+    },
+    {
+      "iconPath": "",
+      "label": "Secondary Color",
+      "value": "Secondary Color"
+    },
+    {
+      "iconPath": "",
+      "label": "Action/Button/Link",
+      "value": "Action/Button/Link"
+    },
+    {
+      "iconPath": "",
+      "label": "Background",
+      "value": "Background"
+    }
+  ]
+}
