@@ -31,7 +31,11 @@ export default function Login() {
           handleOnChange={e => dispatch(loginInput({ email, password: e.target.value}))}
         />
 
-        <SignInGroup/>
+      <SignInGroup
+        buttonText="Sign In"
+        customText=""
+        operationText="Reset Password?"
+      />
 
       </div>
 

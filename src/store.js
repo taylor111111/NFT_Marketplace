@@ -1,10 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
-import counterReducer from './counter/counterSlice'
 import loginReducer from './containers/Login/LoginSlice'
-
+import AccountWrapperSlice from './containers/AccountWrapper/AccountWrapperSlice'
+import AccountSlice from './containers/Account/AccountSlice'
 export default configureStore({
   reducer: {
-    counter: counterReducer,
     login: loginReducer,
+    accountWrapper: AccountWrapperSlice,
+    account: AccountSlice,
   },
 })

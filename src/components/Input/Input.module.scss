@@ -25,3 +25,11 @@
   color: #FFFFFF;
   font-size: 13px;
 }
+
+.Input input.error {
+  border: 0.5px solid #cf000f;
+}
+
+.Input input.success {
+  border: 0.5px solid #009944;
+}

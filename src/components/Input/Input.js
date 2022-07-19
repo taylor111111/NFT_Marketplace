@@ -8,6 +8,7 @@ export default function Input(props) {
       {props.label} 
     </span>
     <input
+      className={s[props.alarm]}
       type={props.type}
       placeholder={props.placeholder}
       value={props.value}

@@ -2,6 +2,7 @@ import React from 'react'
 import s from './AccountWrapper.module.scss'
 
 import Login from '../Login/Login'
+import Account from '../Account/Account'
 
 const containerWidth = 578;
 const scaleNum = document.body.clientWidth / containerWidth;
@@ -19,7 +20,7 @@ export default function AccountWrapper() {
             <div className={s.content}>
               <div className={s['account-form']} >
 
-                <Login/>
+                <Account />
                 
               </div>
             </div>
