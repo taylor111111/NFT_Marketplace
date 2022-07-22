@@ -7,7 +7,10 @@ export default function SignInGroup(props) {
     <button>{props.buttonText}</button>
     <div className={s['inline-text']}> 
       <span>{props.customText}</span>
-      <span className={s['go-change-operation']}>{props.operationText}</span>
+      <span
+        className={s['go-change-operation']}
+        onClick={() => props.operationExc()}
+      >{props.operationText}</span>
     </div>
   </div>)
 }

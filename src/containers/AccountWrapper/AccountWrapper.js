@@ -1,4 +1,6 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
+import { isEqual } from 'lodash'
 import s from './AccountWrapper.module.scss'
 
 import Login from '../Login/Login'
@@ -12,7 +14,19 @@ const transform = {
   transform: `scale(${scaleRate})`
 };
 
+const currentPage = (currentState) => {
+  if(isEqual(currentState, 'account')) {
+    return <Account/>;
+  }
+
+  return <Login/>;
+}
+
 export default function AccountWrapper() {
+  const {
+    currentState,
+  } = useSelector((state) => state.accountWrapper);
+
   return (
     <div className={s.container}>
       <div className={s.logo}>
@@ -20,8 +34,8 @@ export default function AccountWrapper() {
             <div className={s.content}>
               <div className={s['account-form']} >
 
-                <Account />
-                
+                {currentPage(currentState)}
+
               </div>
             </div>
         </div>

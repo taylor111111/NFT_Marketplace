@@ -7,8 +7,14 @@ export const AccountSlice = createSlice({
     email: '',
     password: '',
     confirmPassword: '',
-    icon:'',
-    banner:''
+
+    iconSize: '',
+    iconName: '',
+    iconFile: {},
+    
+    bannerSize: '',
+    bannerName: '',
+    bannerFile: {},
   },
   reducers: {
     accountInput: (state, action) => {

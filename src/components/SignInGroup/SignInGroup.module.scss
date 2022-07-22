@@ -29,5 +29,10 @@
 }
 
 .sign-in-group .go-change-operation {
+  cursor: pointer;
   color: rgb(0, 162, 224);
+}
+
+.go-change-operation:hover {
+  color: rgb(3 185 255);
 }

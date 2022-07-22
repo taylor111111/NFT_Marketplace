@@ -28,5 +28,10 @@
 }
 
 .go-sign-up .span {
+  cursor: pointer;
   color:#00A2E0;
+}
+
+.go-sign-up .span:hover {
+  color:rgb(0 185 255);
 }

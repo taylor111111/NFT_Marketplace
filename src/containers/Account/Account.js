@@ -3,10 +3,13 @@ import { useSelector, useDispatch } from 'react-redux'
 import { isEqual } from 'lodash'
 
 import { accountInput } from './AccountSlice'
+import { changePage } from '../AccountWrapper/AccountWrapperSlice'
 import s from './Account.module.scss'
 
 import Input from '../../components/Input/Input';
 import SignInGroup from '../../components/SignInGroup/SignInGroup'
+import FileInput from '../../components/FileInput/FileInput'
+
 
 const alarm = (password, confirmPassword) => {
   if(!confirmPassword) {
@@ -27,8 +30,13 @@ export default function Account() {
     email,
     password,
     confirmPassword,
-    icon,
-    banner } = useSelector((state) => state.account);
+
+    iconSize,
+    iconName,
+
+    bannerSize,
+    bannerName,
+  } = useSelector((state) => state.account);
 
   return (
     <div>
@@ -67,10 +75,39 @@ export default function Account() {
           handleOnChange={e => dispatch(accountInput({ confirmPassword: e.target.value }))}
         />
 
+        <FileInput
+          label='Upload Icon'
+          size={iconSize}
+          name={iconName}
+          handleOnChange={e => {
+            const iconFile = e.target.files[0];
+            
+            dispatch(accountInput({
+              iconSize: iconFile.size,
+              iconName: iconFile.name
+            }));
+          }}
+        />
+
+        <FileInput
+          label='Upload Banner'
+          size={bannerSize}
+          name={bannerName}
+          handleOnChange={e => {
+            const bannerFile = e.target.files[0];
+            
+            dispatch(accountInput({
+              bannerSize: bannerFile.size,
+              bannerName: bannerFile.name
+            }));
+          }}
+        />
+
         <SignInGroup
           buttonText="GREATE ACCOUNT"
           customText="Have an account?"
           operationText="Sign In"
+          operationExc={() => dispatch(changePage({ currentState: 'login' }))}
         />
 
       </div>
