@@ -1,0 +1,39 @@
+.de-left {
+  min-width: 285px;
+  max-width: 285px;
+  margin-right: 30px;
+  img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  h1 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding: 0;
+    color: #d4d4d5;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+  }
+  table {
+    margin-top: 0;
+    margin-left: 80px;
+    width: 86px;
+    text-align:center;
+    .num {
+      line-height: 29px;
+      font-size: 24px;
+      letter-spacing: -0.24px;
+      color: #ffffff;
+      font-family: Futura;
+    }
+    .dhm {
+      line-height: 14px;
+      font: normal normal bold 11px Inter;
+      letter-spacing: 0px;
+      color: #949596;
+      text-transform: uppercase;
+      opacity: 0.5; 
+    }
+  }
+}

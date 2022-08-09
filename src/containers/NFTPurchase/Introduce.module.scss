@@ -1,0 +1,129 @@
+.introduce {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 30px;
+  .icon {
+    height: 24px;
+    width: 23px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  h1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    .de-title {
+      font-size:16px;
+      height: 24px;
+      line-height: 24px;
+    }
+    .h-right {
+      display: flex;
+      .h-icon {
+        display: flex;
+        font-size: 13px;
+        height: 24px;
+        line-height:24px;
+        font-weight: 200;
+      }
+
+      .eye {
+        background-image: url('../../../public/assets/eye.svg');
+        background-size: 100% auto;
+        margin-right: 8px;
+      }
+
+      .icon-heart {
+        background-image: url('../../../public/assets/icon-heart.svg');
+        background-size: 20px auto;
+        margin-right: 8px;
+        margin-left: 20px;
+      }
+    }
+  }
+
+  h2 {
+      font-family: Futura;
+      font-weight: 500;
+      margin-bottom: 6px;
+  }
+
+  .num {
+    font-size: 16px;
+  }
+  .price {
+    font-size: 16px;
+    color:#949596;
+  }
+
+  table {
+    margin-top: 30px;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    .title {
+      font-size: 16px;
+    }
+    .content {
+      font-size: 14px;
+      color:#949596;
+      .avatar::before {
+        background-image: url('../../../public/assets/avatar-yilong.jpeg');
+        background-size: 30px auto;
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        content: '';
+        position: absolute;
+        top:0px;
+        left:0px;
+      }
+      .avatar {
+        position: relative;
+        padding-left: 35px;
+        height: 30px;
+      }
+
+      .owner {
+        padding-left: 35px;
+        background-image: url('../../../public/assets/icon-nike.svg');
+        background-size: 30px auto;
+        background-repeat: no-repeat;
+        background-position: left center;
+      }
+
+      .etc::before {
+        background-image: url('../../../public/assets/ic-eth.svg');
+        background-size: auto 20px;
+        background-repeat: no-repeat;
+        background-position: left center;
+
+        width: 20px;
+        height: 30px;
+        content: '';
+        position: absolute;
+        top:0px;
+        left:0px;
+
+        opacity: .5;
+      }
+      .etc {
+        position: relative;
+        padding-left: 20px;
+      }
+      
+
+    }
+  }
+
+  button {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 34px;
+    line-height: 34px;
+    padding-left: 20px;
+    padding-right: 24px;
+    border-radius: 17px;
+  }
+
+}

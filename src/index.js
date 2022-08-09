@@ -10,6 +10,7 @@ import {
 import './index.scss'
 import App from './App'
 import AccountAccess from './containers/AccountAccess/AccountAccess'
+import NFTPurchase from './containers/NFTPurchase/NFTPurchase'
 
 import store from './store'
 
@@ -20,7 +21,8 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="accountAccess" element={<AccountAccess />} />
+        <Route path="AccountAccess" element={<AccountAccess />} />
+        <Route path="NFTPurchase" element={<NFTPurchase />} />
       </Routes>
     </BrowserRouter>
   </Provider>
