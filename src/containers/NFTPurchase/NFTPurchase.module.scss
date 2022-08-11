@@ -18,9 +18,8 @@
     letter-spacing:0;
   }
 
-  h1, h2, h3 {
-    padding: 0;
-    margin: 0;
+  h3 {
+    font-size: 14px;
   }
 
 }
@@ -52,7 +51,7 @@
       min-width: 182px;
       max-width: 182px;
       height: 182px;
-      border-radius: 20px;
+      border-radius: 18px;
       background-image: url('../../../public/assets/paul-left-img.jpg');
       background-repeat: no-repeat;
       background-size: 100% auto;

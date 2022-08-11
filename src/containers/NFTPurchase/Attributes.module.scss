@@ -1,0 +1,23 @@
+.atrb {
+  margin-top: 35px;
+  ul {
+    font-size: 14px;
+  }
+  li {
+    display: flex;
+    border-top:1px solid rgba(255, 255, 255, 0.1);
+    align-items: center;
+    height: 48px;
+  }
+
+  li:first-child {
+    border-top: 0;
+  }
+
+ .li-right {
+    flex-grow: 1;
+    text-align: right;
+    color: #949596;
+  }
+
+}

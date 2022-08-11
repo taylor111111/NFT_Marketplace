@@ -17,9 +17,9 @@ export default function Introduce() {
 
       <h2>White Jordan Sport</h2>
       <div>
-        <span className={s.num}>3.12ETH</span>
+        <span className={s.num}>3.12 ETH</span>
         
-        <span className={s.price}>($ 8,762.64)</span>
+        <span className={s.price}> ($ 8,762.64)</span>
       </div>
       <table>
         <tbody>
