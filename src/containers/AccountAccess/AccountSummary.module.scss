@@ -1,0 +1,109 @@
+.wrapper {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 49px;
+  height: 100%;
+  align-items:center;
+}
+.summary {
+  display:flex;
+  flex-direction: column;
+
+  min-width: 224px;
+  max-width: 224px;
+  height: fit-content;
+  border-radius: 16px;
+  padding: 32px;
+
+  background-color: #F7F8F9;
+  .icon {
+    height: 18px;
+    width: 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    cursor: pointer;
+  }
+
+  .ic-nike {
+    width: 36px;
+    height: 36px;
+    background-image: url('../../../public/assets/icon-nike.svg');
+  }
+  .nft-name {
+    margin-top: 16px;
+    color: #00A2E0;
+    line-height: 19px;
+    font-size: 15px;
+    font-family: Inter;
+    font-weight: bold;
+  }
+  .detail {
+    margin-top: 8px;
+    line-height: 27px;
+    font: normal normal 800 24px/24px Futura;
+    letter-spacing: -0.24px;
+    line-height: 26px;
+  }
+  table {
+    margin-top: 16px;
+    width: 86px;
+    text-align:center;
+    .num {
+      line-height: 29px;
+      font-size: 24px;
+      letter-spacing: -0.24px;
+      color: #1D1E1F;
+      opacity: 0.8;
+      font-family: Futura;
+      font-weight: medium;
+    }
+    .dhm {
+      line-height: 14px;
+      font: normal normal bold 11px Inter;
+      letter-spacing: 0px;
+      color: #1D1E1F;
+      text-transform: uppercase;
+      opacity: 0.5; 
+    }
+  }
+  .buttons {
+    display:flex;
+    margin-top: 24px;
+    .eth {
+      display: flex;
+      align-items: center;
+
+      background-color: #00A2E0;
+      padding-left: 13px;
+      padding-right: 15px;
+      height: 32px;
+      border-radius: 16px;
+      font: normal normal 800 15px/37px Futura;
+      letter-spacing: -0.15px;
+      color: #FFFFFF;
+      .ic-eth {
+        width: 10px;
+        height:32px;
+        margin-right: 6px;
+        background-image: url('../../../public/assets/ic-eth.svg');
+      }
+    }
+
+    button {
+      margin-left: 10px;
+      height: 32px;
+      border-radius: 18px;
+      line-height: 32px;
+      /* UI Properties */
+      background-color: #414448;
+      padding-left: 15px;
+      padding-right: 15px;
+      font: normal normal 800 13px/17px Futura;
+      letter-spacing: 0px;
+      color: #FFFFFF;
+      cursor: pointer;
+    }
+  }
+}
