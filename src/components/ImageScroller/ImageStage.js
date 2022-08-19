@@ -96,12 +96,12 @@ class ImageStage {
 
   createPosition = (isFirst, p) => {
     const object = new THREE.Object3D();
-    object.position.x = p * 400 - 600;
+    object.position.x = p * 500;
     object.position.y = 0;
     if(isFirst) {
       object.rotation.y = 0 - this.imgRotation;
       object.position.z = 1000;
-      object.position.x = -500;
+      object.position.x = -100;
     } else {
       object.rotation.y = this.imgRotation;
     }

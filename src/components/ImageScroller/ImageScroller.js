@@ -17,19 +17,26 @@ export default class ImageScroller extends Component {
 
   render() {
     return (
-      <div
-        className={s.mount}
-        ref={ref => (this.mount = ref)}>
-        {this.props.imgUrl.map((url,index) => <img
-          alt=""
-          key={index}
-          src={url}
-          ref={ref => {
-            if(!!this.imgObj && !!ref) {
-              this.imgObj.push(ref);
-            }
-          }}
-        />)}
+      <div>
+        <div
+          className={s.mount}
+          ref={ref => (this.mount = ref)}>
+          {this.props.imgUrl.map((url,index) => <img
+            alt=""
+            key={index}
+            src={url}
+            ref={ref => {
+              if(!!this.imgObj && !!ref) {
+                this.imgObj.push(ref);
+              }
+            }}
+          />)}
+        </div>
+        <ul className={s.arrow}>
+          <li></li>
+          <li></li>
+        </ul>
+        <ul className={s.bar}>{this.props.imgUrl.map((item,index) => <li key={index}/>)}</ul>
       </div>
     )
   }
