@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import s from "./ImageScroller.module.scss";
 import ImageStage from './ImageStage'
+import OperationPanel from './OperationPanel'
 
 const stage = new ImageStage();
+let first = 0;
 
 export default class ImageScroller extends Component {
   imgObj = [];
@@ -10,9 +12,20 @@ export default class ImageScroller extends Component {
   componentDidMount() {
     stage.setImgObj(this.imgObj);
     stage.setMount(this.mount);
+    stage.setOperationPanel(this.operationPanel);
     
     stage.init();
     stage.animate();
+  }
+
+  handleLeft() {
+    first = (first - 1 + this.imgObj.length) % this.imgObj.length;
+    stage.scrollExe(first);
+  }
+
+  handleRight() {
+    first = (first + 1) % this.imgObj.length;      
+    stage.scrollExe(first);
   }
 
   render() {
@@ -20,7 +33,8 @@ export default class ImageScroller extends Component {
       <div>
         <div
           className={s.mount}
-          ref={ref => (this.mount = ref)}>
+          ref={ref => (this.mount = ref)}
+        >
           {this.props.imgUrl.map((url,index) => <img
             alt=""
             key={index}
@@ -32,11 +46,17 @@ export default class ImageScroller extends Component {
             }}
           />)}
         </div>
-        <ul className={s.arrow}>
-          <li></li>
-          <li></li>
-        </ul>
-        <ul className={s.bar}>{this.props.imgUrl.map((item,index) => <li key={index}/>)}</ul>
+        <div
+          className={s.panel}
+          ref={ref => (this.operationPanel = ref)}
+        >
+          <OperationPanel
+            handleLeft={() => this.handleLeft()}
+            handleRight={() => this.handleRight()}
+            imgUrl={this.props.imgUrl}
+          />
+        </div>
+
       </div>
     )
   }

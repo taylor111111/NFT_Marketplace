@@ -15,12 +15,28 @@ class ImageStage {
   imgObj = [];
   imgRotation = -0.23356108369490713; 
 
+  operationPanel;
+
   setImgObj = (imgObj) => {
     this.imgObj = imgObj;
   }
 
   setMount = (mount) => {
     this.mount = mount;
+  }
+
+  setOperationPanel = (operationPanel) => {
+    this.operationPanel = operationPanel; 
+  }
+
+  setPanelPosition = () => {
+    const objectCSS = new CSS3DObject( this.operationPanel );
+    objectCSS.position.x = 0;
+    objectCSS.position.y = -619;
+    objectCSS.position.z = 0;
+    objectCSS.rotation.copy(new THREE.Euler(0, 0, 0));
+    
+    this.scene.add( objectCSS );
   }
 
   transform = ( targets, duration ) => {
@@ -157,6 +173,7 @@ class ImageStage {
     this.setScene();
     this.buildList();
     this.setRenderer();
+    this.setPanelPosition();
     // this.setControls();
     this.transform( this.defaultPosition, 2000 );
 

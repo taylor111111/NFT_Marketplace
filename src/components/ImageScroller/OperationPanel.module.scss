@@ -1,0 +1,48 @@
+.bar {
+  display: flex;
+  justify-content: center;
+  li {
+    width: 75px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: #00a2e0;
+    margin-right: 15px;
+  }
+  .active {
+    background-color: #00a2e0;
+  }
+}
+
+.arrow {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  
+  li {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+    width: 100px;
+    height: 100px;
+    background-color: #282a2c;
+    border-radius: 20px;
+    margin-left: 30px;
+
+    cursor: pointer;
+  }
+
+  li:hover svg {
+    fill: #00a2e0; 
+  }
+  .arr-right {
+    margin-right: 75px;
+  }
+  svg {
+    width: 55px;
+    fill: #505254;
+  }
+  .available svg {
+    fill: #00a2e0; 
+  }
+}

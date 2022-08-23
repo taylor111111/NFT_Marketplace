@@ -5,19 +5,8 @@
     width: 700px;
     border-radius: 30px;
   }
-}
-.bar {
-  display: flex;
-  li {
-    width: 25px;
-    height: 5px;
-    border-radius: 3px;
-   // background-color: #282a2c;
-    background-color: #00a2e0;
-    margin-right: 5px;
-  }
-  .active {
-    background-color: #00a2e0;
+  .panel {
+    width: 280%;
+    height: 100px;
   }
 }
-
