@@ -2,11 +2,11 @@
   display: flex;
   justify-content: center;
   li {
-    width: 75px;
-    height: 15px;
-    border-radius: 10px;
-    background-color: #00a2e0;
-    margin-right: 15px;
+    width:25px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #282a2c;
+    margin-right: 5px;
   }
   .active {
     background-color: #00a2e0;
@@ -23,11 +23,11 @@
     justify-content:center;
     align-items: center;
 
-    width: 100px;
-    height: 100px;
+    width: 35px;
+    height: 35px;
     background-color: #282a2c;
-    border-radius: 20px;
-    margin-left: 30px;
+    border-radius: 5px;
+    margin-left: 10px;
 
     cursor: pointer;
   }
@@ -39,7 +39,7 @@
     margin-right: 75px;
   }
   svg {
-    width: 55px;
+    width: 20px;
     fill: #505254;
   }
   .available svg {

@@ -4,6 +4,7 @@ import ArrowLeft from '../IconArrow/ArrowLeft'
 import ArrowRight from '../IconArrow/ArrowRight'
 
 export default function OperationPanel(props) {
+  console.log(props.first);
 
   return (<div>
     <ul className={s.arrow}>
@@ -21,7 +22,10 @@ export default function OperationPanel(props) {
       </li>
     </ul>
     <ul className={s.bar}>
-      {props.imgUrl.map((item,index) => <li key={index}/>)}
+      {props.imgUrl.map((item,index) => <li
+        key={index}
+        className={index === props.first ? s.active : ''}
+      />)}
     </ul>
   </div>)
 }

@@ -51,6 +51,7 @@ export default class ImageScroller extends Component {
           ref={ref => (this.operationPanel = ref)}
         >
           <OperationPanel
+            first={first}
             handleLeft={() => this.handleLeft()}
             handleRight={() => this.handleRight()}
             imgUrl={this.props.imgUrl}

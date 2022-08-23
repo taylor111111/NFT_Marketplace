@@ -32,8 +32,8 @@ class ImageStage {
   setPanelPosition = () => {
     const objectCSS = new CSS3DObject( this.operationPanel );
     objectCSS.position.x = 0;
-    objectCSS.position.y = -619;
-    objectCSS.position.z = 0;
+    objectCSS.position.y = -219;
+    objectCSS.position.z = 2000;
     objectCSS.rotation.copy(new THREE.Euler(0, 0, 0));
     
     this.scene.add( objectCSS );
