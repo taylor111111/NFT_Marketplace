@@ -4,7 +4,6 @@ import ImageStage from './ImageStage'
 import OperationPanel from './OperationPanel'
 
 const stage = new ImageStage();
-let first = 0;
 
 export default class ImageScroller extends Component {
   imgObj = [];
@@ -19,13 +18,19 @@ export default class ImageScroller extends Component {
   }
 
   handleLeft() {
-    first = (first - 1 + this.imgObj.length) % this.imgObj.length;
-    stage.scrollExe(first);
+    stage.scrollExe(this.props.handleLeft());
   }
 
   handleRight() {
-    first = (first + 1) % this.imgObj.length;      
-    stage.scrollExe(first);
+    stage.scrollExe(this.props.handleRight());
+  }
+
+  initialImgObj(ref, index) {
+    if(!!this.imgObj
+      && !!ref
+      && !this.imgObj[index]) {
+      this.imgObj.push(ref);
+    }
   }
 
   render() {
@@ -39,11 +44,7 @@ export default class ImageScroller extends Component {
             alt=""
             key={index}
             src={url}
-            ref={ref => {
-              if(!!this.imgObj && !!ref) {
-                this.imgObj.push(ref);
-              }
-            }}
+            ref={ref => this.initialImgObj(ref, index)}
           />)}
         </div>
         <div
@@ -51,7 +52,7 @@ export default class ImageScroller extends Component {
           ref={ref => (this.operationPanel = ref)}
         >
           <OperationPanel
-            first={first}
+            first={this.props.first}
             handleLeft={() => this.handleLeft()}
             handleRight={() => this.handleRight()}
             imgUrl={this.props.imgUrl}

@@ -1,5 +1,6 @@
 import React from 'react'
 import s from './ImageContainer.module.scss'
+import { scrollImg } from './AccountAccessSlice'
 import ImageScroller from '../../components/ImageScroller/ImageScroller'
 
 import { useSelector, useDispatch } from 'react-redux'
@@ -16,11 +17,27 @@ const imgUrl = imgName.map((name) => require(`../../images/${name}`));
 export default function ImageContainer() {
   const dispatch = useDispatch();
   const { first } = useSelector((state) => state.accountAccess);
-  console.log(first);
 
   return (
     <div className={s['img-container']}>
-      <ImageScroller imgUrl={imgUrl}/>
+      <ImageScroller
+        imgUrl={imgUrl}
+        first={first}
+        handleLeft={() => {
+          const scrollTo = (first - 1 + imgUrl.length) % imgUrl.length;
+          dispatch(scrollImg({
+            first: scrollTo
+          }));
+          return scrollTo;
+        }}
+        handleRight={() => {
+          const scrollTo = (first + 1) % imgUrl.length;
+          dispatch(scrollImg({
+            first: scrollTo
+          }));
+          return scrollTo;
+        }}
+      />
     </div>
   )
 }

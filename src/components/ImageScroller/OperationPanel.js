@@ -4,7 +4,6 @@ import ArrowLeft from '../IconArrow/ArrowLeft'
 import ArrowRight from '../IconArrow/ArrowRight'
 
 export default function OperationPanel(props) {
-  console.log(props.first);
 
   return (<div>
     <ul className={s.arrow}>
