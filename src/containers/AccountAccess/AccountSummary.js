@@ -1,7 +1,9 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import s from './AccountSummary.module.scss'
 
 export default function AccountSummary() {
+  const history = useNavigate();
 
   return (
     <div className={s.wrapper}>
@@ -29,7 +31,9 @@ export default function AccountSummary() {
           </table>
         <div className={s.buttons}>
           <span className={s.eth}><i className={`${s.icon} ${s['ic-eth']}`}/>3.12</span>
-          <button>VIEW DETAIL</button>
+          <button
+            onClick={() => history("/NFTPurchase")}
+          >VIEW DETAIL</button>
         </div>
       </div>
     </div>

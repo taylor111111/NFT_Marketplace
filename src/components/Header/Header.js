@@ -11,6 +11,7 @@ export default function Header() {
         <div className={s.search}>
           <Search
             placeholder="Search NFT"
+            handleOnChange={(e) => console.log(e.target.value)}
           />
         </div>
       </div>

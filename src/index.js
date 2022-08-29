@@ -28,6 +28,3 @@ root.render(
   </Provider>
 );
 
-// dev
-module.hot.accept();
-// dev -----end ---

@@ -1,15 +1,17 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
 import { loginInput } from './LoginSlice'
 import { changePage } from '../AccountWrapper/AccountWrapperSlice'
 import s from './Login.module.scss'
 
-import Input from '../../components/Input/Input';
-import SignInGroup from '../../components/SignInGroup/SignInGroup';
+import Input from '../../components/Input/Input'
+import SignInGroup from '../../components/SignInGroup/SignInGroup'
 
 export default function Login() {
   const dispatch = useDispatch();
   const { email, password } = useSelector((state) => state.login);
+  const history = useNavigate(); 
 
   return (
     <div>
@@ -32,12 +34,13 @@ export default function Login() {
           handleOnChange={e => dispatch(loginInput({ email, password: e.target.value}))}
         />
 
-      <SignInGroup
-        buttonText="Sign In"
-        customText=""
-        operationText="Reset Password?"
-        operationExc={() => dispatch(changePage({ currentState: 'resetPassword'}))}
-      />
+        <SignInGroup
+          buttonText="Sign In"
+          customText=""
+          operationText="Reset Password?"
+          operationExc={() => dispatch(changePage({ currentState: 'resetPassword'}))}
+          handleButton={() => history("/AccountAccess")}
+        />
 
       </div>
 

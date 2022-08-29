@@ -1,4 +1,6 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
+
 import s from './NFTPurchase.module.scss'
 
 import Header from '../../components/Header/Header'
@@ -9,12 +11,16 @@ import Details from './Details'
 import Attributes from './Attributes'
 
 export default function NFTPurchase() {
+  const history = useNavigate();
 
   return (<div className={s.purchase}>
     <Header/>
     <div className={s.banner}></div>
     <div className={s.container}>
-      <button className={s.back}>
+      <button
+        className={s.back}
+        onClick={() => history('/AccountAccess')}
+      >
         BACK
       </button>
 

@@ -4,7 +4,11 @@ import s from './SignInGroup.module.scss'
 export default function SignInGroup(props) {
 
   return (<div className={s['sign-in-group']}>
-    <button>{props.buttonText}</button>
+    <button
+      onClick={() => props.handleButton()}
+    >
+      {props.buttonText}
+    </button>
     <div className={s['inline-text']}> 
       <span>{props.customText}</span>
       <span

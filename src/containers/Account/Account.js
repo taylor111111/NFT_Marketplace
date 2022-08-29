@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { isEqual } from 'lodash'
+import { useNavigate } from 'react-router-dom';
 
 import { accountInput } from './AccountSlice'
 import { changePage } from '../AccountWrapper/AccountWrapperSlice'
@@ -24,6 +25,7 @@ const alarm = (password, confirmPassword) => {
 }
 
 export default function Account() {
+  const history = useNavigate();
   const dispatch = useDispatch();
   const {
     name,
@@ -108,6 +110,7 @@ export default function Account() {
           customText="Have an account?"
           operationText="Sign In"
           operationExc={() => dispatch(changePage({ currentState: 'login' }))}
+          handleButton={() => history("/AccountAccess")}
         />
 
       </div>

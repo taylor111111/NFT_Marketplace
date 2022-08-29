@@ -19,21 +19,23 @@ const fileName = (name) => {
 
 export default function FileInput(props) {
 
-  return (<label className={s.FileInput}>
+  return (<div className={s.FileInput}>
     <span className={s.label}>
       {props.label} 
     </span>
     <span className={s.size}>
       {fileSize(props.size)}
     </span>
-    <input
-      type="file"
-      onChange={e => {
-        props.handleOnChange(e);
-    }}/>
-    <div className={s['file-preview']}>
-      <span>{fileName(props.name)}</span>
-      <span className={s.button}>SELECT FILE</span>
-    </div>
-  </label>)
+    <label>
+      <input
+        type="file"
+        onChange={e => {
+          props.handleOnChange(e);
+      }}/>
+      <div className={s['file-preview']}>
+        <span>{fileName(props.name)}</span>
+        <span className={s.button}>SELECT FILE</span>
+      </div>
+    </label>
+  </div>)
 }
