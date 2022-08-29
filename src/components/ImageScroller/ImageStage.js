@@ -91,6 +91,9 @@ class ImageStage {
   }
  
   buildList = () => {
+    const objects = [];
+    const positions = [];
+
     for ( let i = 0; i < this.imgObj.length; i++ ) {
 
       const element = this.imgObj[i];
@@ -103,11 +106,13 @@ class ImageStage {
       
       this.scene.add( objectCSS );
 
-      this.objects.push( objectCSS );
+      objects.push( objectCSS );
 
-      this.defaultPosition.push(this.createPosition(i === 0, i));
+      positions.push(this.createPosition(i === 0, i));
       //
     }
+    this.objects = objects;
+    this.defaultPosition = positions;
   }
 
   createPosition = (isFirst, p) => {
