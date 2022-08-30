@@ -1,7 +1,6 @@
 import * as THREE from 'three';
 
 import { TWEEN } from 'three/examples/jsm/libs/tween.module.min.js';
-import { TrackballControls } from 'three/examples/jsm/controls/TrackballControls.js';
 import { CSS3DRenderer, CSS3DObject } from 'three/examples/jsm/renderers/CSS3DRenderer.js';
 
 class ImageStage {
@@ -11,7 +10,6 @@ class ImageStage {
   controls;
   mount;
   objects = [];
-  defaultPosition = [];
   imgObj = [];
   imgRotation = -0.23356108369490713; 
 
@@ -76,7 +74,6 @@ class ImageStage {
 
       TWEEN.update();
 
-    // this.controls.update();
   }
 
   onWindowResize = () => {
@@ -92,7 +89,6 @@ class ImageStage {
  
   buildList = () => {
     const objects = [];
-    const positions = [];
 
     for ( let i = 0; i < this.imgObj.length; i++ ) {
 
@@ -108,11 +104,9 @@ class ImageStage {
 
       objects.push( objectCSS );
 
-      positions.push(this.createPosition(i === 0, i));
       //
     }
     this.objects = objects;
-    this.defaultPosition = positions;
   }
 
   createPosition = (isFirst, p) => {
@@ -165,13 +159,6 @@ class ImageStage {
     }
   }
 
-  setControls = () => {
-    this.controls = new TrackballControls( this.camera, this.renderer.domElement );
-    this.controls.minDistance = 500;
-    this.controls.maxDistance = 6000;
-    this.controls.addEventListener( 'change', this.render );
-  }
-  
 
   init = () => {
     this.setCamera();
@@ -179,8 +166,6 @@ class ImageStage {
     this.buildList();
     this.setRenderer();
     this.setPanelPosition();
-    // this.setControls();
-    this.transform( this.defaultPosition, 2000 );
 
     //
     window.addEventListener( 'resize', this.onWindowResize );

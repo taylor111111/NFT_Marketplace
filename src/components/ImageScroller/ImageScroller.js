@@ -15,6 +15,7 @@ export default class ImageScroller extends Component {
     
     stage.init();
     stage.animate();
+    stage.scrollExe(this.props.first);
   }
 
   handleLeft() {
