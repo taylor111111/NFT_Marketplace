@@ -1,11 +1,4 @@
 {
-  "state": {
-    "nftsCreated": "162",
-    "transactions": "1.827",
-    "nftsSold": "4.2311",
-    "currency": "ETH",
-    "collectors": "56"
-  },
   "card":  {
     "id": 1,
     "itemType": "Product",
@@ -46,31 +39,6 @@
       "rarity": "Common",
       "itemSize": "2500 x 2500",
       "color": "Neon"
-    },
-    "digitalAsset": {
-      "photoUrl": "/assets/nft-deatil-img02.jpg",
-      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod devide et imperatempor invidunt ut labore devide et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit.",
-      "storageLocation": "Cloud",
-      "attributes": {
-        "model": "Nikesport",
-        "rarity": "Common",
-        "itemSize": "2500 x 2500",
-        "color": "Neon"
-      }
     }
-  },
-  "trendingCreators": [
-    {
-      "nftEnterpriseLogo": "/assets/icon-nike.svg",
-      "nftEnterpriseName": "Nike"
-    },
-    {
-      "nftEnterpriseLogo": "/assets/ati-logo.svg",
-      "nftEnterpriseName": "ATI Radeon"
-    },
-    {
-      "nftEnterpriseLogo": "/assets/nvdia-green-logo.svg",
-      "nftEnterpriseName": "nVidia Graphic"
-    }
-  ]
+  }
 }

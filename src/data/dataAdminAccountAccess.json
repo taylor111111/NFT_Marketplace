@@ -1,0 +1,57 @@
+{
+  "state": {
+    "nftsCreated": "162",
+    "transactions": "1.827",
+    "nftsSold": "4.2311",
+    "currency": "ETH",
+    "collectors": "56"
+  },
+  "card":  [{
+    "id":0,
+    "photoUrl": "/assets/img-ball-01.png",
+    "photoUrlList": ["/assets/img-ball-01.png", "/assets/img-ball-02.png", "/assets/img-ball-03.png", "/assets/img-ball-04.png"],
+    "endD": "07",
+    "endH": "20",
+    "endM": "32",
+    "type": "Collection Item",
+    "nftCollectionName": "3D Render",
+    "titleCollections": "Jordan Collections",
+    "nftName": "Black Red Jordan Sport"
+  },
+  {
+    "id":1,
+    "photoUrl": "/assets/img-ball-01.png",
+    "photoUrlList": ["/assets/img-ball-01.png", "/assets/img-ball-02.png", "/assets/img-ball-03.png", "/assets/img-ball-04.png"],
+    "endD": "07",
+    "endH": "21",
+    "endM": "32",
+    "type": "Collection Item",
+    "nftCollectionName": "3D Render",
+    "titleCollections": "Jordan Collections",
+    "nftName": "White Red Jordan Sport"
+  },
+  {
+    "id":2,
+    "photoUrl": "/assets/img-ball-01.png",
+    "photoUrlList": ["/assets/img-ball-01.png", "/assets/img-ball-02.png", "/assets/img-ball-03.png", "/assets/img-ball-04.png"],
+    "endD": "07",
+    "endH": "20",
+    "endM": "32",
+    "type": "Collection Item",
+    "nftCollectionName": "3D Render",
+    "titleCollections": "Jordan Collections",
+    "nftName": "White Jordan Sport"
+  },
+  {
+    "id":3,
+    "photoUrl": "/assets/img-ball-01.png",
+    "photoUrlList": ["/assets/img-ball-01.png", "/assets/img-ball-02.png", "/assets/img-ball-03.png", "/assets/img-ball-04.png"],
+    "endD": "07",
+    "endH": "20",
+    "endM": "32",
+    "type": "Collection Item",
+    "nftCollectionName": "3D Render",
+    "titleCollections": "Jordan Collections",
+    "nftName": "Black Jordan Sport"
+  }]
+}

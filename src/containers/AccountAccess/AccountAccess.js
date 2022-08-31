@@ -1,14 +1,15 @@
 import React from 'react'
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector, useDispatch, connect } from 'react-redux'
 
 import Header from '../../components/Header/Header'
 import ImageContainer from './ImageContainer'
 import AccountSummary from './AccountSummary'
 import s from './AccountAccess.module.scss'
 
+// fake data
+
 export default class AccountAccess extends React.Component {
   render() {
-
     return (
       <div className={s.AccountAccess}>
         <Header/>

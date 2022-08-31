@@ -5,6 +5,7 @@ import ImageScroller from '../../components/ImageScroller/ImageScroller'
 
 import { useSelector, useDispatch } from 'react-redux'
 
+// fake data
 const imgName = [
   'scroll-img01.png',
   'scroll-img02.png',
@@ -13,6 +14,7 @@ const imgName = [
 ];
 
 const imgUrl = imgName.map((name) => require(`../../images/${name}`));
+//
 
 export default function ImageContainer() {
   const dispatch = useDispatch();

@@ -4,10 +4,22 @@ export const AccountAccessSlice = createSlice({
   name: 'accountAccess',
   initialState: {
     first: 0,
+    cards: [{
+      endD: '',
+      endH: '',
+      endM: '',
+      nftName: '',
+      balance: '',
+      collection: ''
+    }]
   },
   reducers: {
 
     scrollImg: (state, action) => {
+      Object.assign(state, action.payload);
+    },
+
+    setImgInfo: (state, action) => {
       Object.assign(state, action.payload);
     }
 
@@ -15,6 +27,6 @@ export const AccountAccessSlice = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const { scrollImg } = AccountAccessSlice.actions
+export const { scrollImg, setImgInfo } = AccountAccessSlice.actions
 
 export default AccountAccessSlice.reducer
