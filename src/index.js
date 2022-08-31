@@ -22,7 +22,7 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="AccountAccess" element={<AccountAccess />} />
-        <Route path="NFTPurchase" element={<NFTPurchase />} />
+        <Route path="NFTPurchase/:index" element={<NFTPurchase />} />
       </Routes>
     </BrowserRouter>
   </Provider>

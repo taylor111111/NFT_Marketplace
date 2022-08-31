@@ -45,7 +45,7 @@ class Summary extends React.Component {
           <div className={s.buttons}>
             <span className={s.eth}><i className={`${s.icon} ${s['ic-eth']}`}/>{balance}</span>
             <button
-              onClick={() => history("/NFTPurchase")}
+              onClick={() => history(`/NFTPurchase/${first}`)}
             >VIEW DETAIL</button>
           </div>
         </div>

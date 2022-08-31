@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './Introduce.module.scss'
 
-export default function Introduce() {
+export default function Introduce(props) {
 
   return (
     <div className={s.introduce}>
@@ -9,17 +9,17 @@ export default function Introduce() {
         <span className={s['de-title']}>JORDAN COLLECTIONS</span>
         <div className={s['h-right']}>
           <i className={`${s.icon} ${s.eye}`}/>
-          <span className={s['h-icon']}>128 views</span>
+          <span className={s['h-icon']}>{props.viewNumber} views</span>
           <i className={`${s.icon} ${s['icon-heart']}`}/>
-          <span className={s['h-icon']}>57 likes</span>
+          <span className={s['h-icon']}>{props.likeNumber} likes</span>
         </div>
       </h1>
 
-      <h2>White Jordan Sport</h2>
+      <h2>{props.nftName}</h2>
       <div>
-        <span className={s.num}>3.12 ETH</span>
+        <span className={s.num}>{props.balance} ETH</span>
         
-        <span className={s.price}> ($ 8,762.64)</span>
+        <span className={s.price}> ({props.price})</span>
       </div>
       <table>
         <tbody>
@@ -30,10 +30,10 @@ export default function Introduce() {
             <td>Blockchain</td>
           </tr>
           <tr className={s.content}>
-            <td className={s.avatar}>Eddie Smith</td>
-            <td className={s.owner}>Nike</td>
-            <td>Fixed Price</td>
-            <td className={s.etc}>Ethereum</td>
+            <td className={s.avatar}>{props.nftCreatorName}</td>
+            <td className={s.owner}>{props.nftEnterpriseName}</td>
+            <td>{props.saleType}</td>
+            <td className={s.etc}>{props.blockchain.value}</td>
           </tr>
         </tbody>
       </table>

@@ -11,12 +11,14 @@
     "photoUrl": "/assets/img-ball-01.png",
     "photoUrlList": ["/assets/img-ball-01.png", "/assets/img-ball-02.png", "/assets/img-ball-03.png", "/assets/img-ball-04.png"],
     "endD": "07",
-    "endH": "20",
+    "endH": "11",
     "endM": "32",
     "type": "Collection Item",
     "nftCollectionName": "3D Render",
     "titleCollections": "Jordan Collections",
-    "nftName": "Black Red Jordan Sport"
+    "nftName": "Black Red Jordan Sport",
+    "balance": "3.12",
+    "collection":"" 
   },
   {
     "id":1,
@@ -28,19 +30,23 @@
     "type": "Collection Item",
     "nftCollectionName": "3D Render",
     "titleCollections": "Jordan Collections",
-    "nftName": "White Red Jordan Sport"
+    "nftName": "White Red Jordan Sport",
+    "balance": "3.12",
+    "collection":"" 
   },
   {
     "id":2,
     "photoUrl": "/assets/img-ball-01.png",
     "photoUrlList": ["/assets/img-ball-01.png", "/assets/img-ball-02.png", "/assets/img-ball-03.png", "/assets/img-ball-04.png"],
-    "endD": "07",
+    "endD": "08",
     "endH": "20",
     "endM": "32",
     "type": "Collection Item",
     "nftCollectionName": "3D Render",
     "titleCollections": "Jordan Collections",
-    "nftName": "White Jordan Sport"
+    "nftName": "White Jordan Sport",
+    "balance": "3.11",
+    "collection":"" 
   },
   {
     "id":3,
@@ -52,6 +58,8 @@
     "type": "Collection Item",
     "nftCollectionName": "3D Render",
     "titleCollections": "Jordan Collections",
-    "nftName": "Black Jordan Sport"
+    "nftName": "Black Jordan Sport",
+    "balance": "5.33",
+    "collection":"" 
   }]
 }
